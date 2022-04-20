@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
-
-/*
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Poppins:wght@200&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -100,7 +95,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: black;
 		line-height: 1.65em;
 		font-size: 15pt;
 	}
@@ -108,7 +103,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: black;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -136,7 +131,7 @@ input, select, textarea {
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		color: #666;
+		color: black;
 		text-decoration: none;
 		border-bottom: solid 1px #ddd;
 	}
@@ -149,12 +144,12 @@ input, select, textarea {
 		}
 
 		a:hover {
-			color: #ed786a;
+			color: rgba(174,169,202,1);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			a:hover strong {
-				color: #ed786a;
+				color: rgba(174,169,202,1);
 			}
 
 	strong, b {
@@ -1769,7 +1764,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #ed786a;
+		background: rgb(156, 140, 249);
 		color: #fff !important;
 		text-transform: uppercase;
 		border-radius: 4px;
@@ -1800,7 +1795,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #fd887a;
+			background: rgb(156, 140, 249);
 		}
 
 		input[type="button"]:active,
@@ -1808,7 +1803,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #ed786a;
+			background: rgb(156, 140, 249);
 		}
 
 		input[type="button"].alt,
@@ -1917,7 +1912,7 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #ed786a;
+			color: rgb(156, 140, 249);
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -2001,13 +1996,8 @@ input, select, textarea {
 
 			#nav > ul > li.active > a:before,
 			#nav > ul > li:hover > a:before {
-				background: #ED786A;
+				background: rgb(156, 140, 249);
 				color: #fff;
-			}
-
-			#nav > ul > li.active > a > span,
-			#nav > ul > li:hover > a > span {
-				color: #ED786A;
 			}
 
 	.dropotron {
@@ -2074,7 +2064,7 @@ input, select, textarea {
 				-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				color: #ed786a;
+				color: rgb(156, 140, 249);
 			}
 
 /* Features */
@@ -2087,13 +2077,17 @@ input, select, textarea {
 		padding: 6em 0;
 	}
 
-		#features p {
-			text-align: center;
-		}
+	#features p {
+		text-align: center;
+	}
 
-		#features ul.actions {
-			margin-top: 1.25em;
-		}
+	#features ul.actions {
+		margin-top: 1.25em;
+	}
+
+	#features h2 {
+		color: rgb(156, 140, 249);
+	}
 
 /* Banner */
 
@@ -2101,58 +2095,54 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		background: #fff;
-		color: #fff;
-		text-align: center;
-		border-top: solid 2px #e5e5e5;
-		border-bottom: solid 2px #e5e5e5;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
+		color: black;
 		position: relative;
-		text-transform: uppercase;
-		background: url("../../images/banner.jpg");
-		background-size: cover;
 		padding: 10em 0;
 	}
 
-		#banner p {
-			font-weight: 400;
-			font-size: 2em;
-			line-height: 1.5em;
-			letter-spacing: 4px;
-			text-align: center;
-			margin: 0;
-		}
+	#banner h1 {
+		font-weight: 400;
+		font-size: 3em;
+		font-family: 'Akshar', sans-serif;
+		color: rgb(156, 140, 249);
+		line-height: 2em;
+		letter-spacing: 4px;
+		text-align: left;
+		text-transform: none;
+		margin: 0;
+	}
 
-		#banner strong {
-			color: inherit;
-		}
+	#banner p {
+		font-weight: 300;
+		font-family: 'Source Sans Pro';
+		font-size: 1em;
+		text-align: left;
+		text-transform: none;
+		margin: 0;
+	}
 
-		#banner > .container {
-			position: relative;
-		}
+	#banner > .container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
 
-			#banner > .container:before, #banner > .container:after {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				width: 35px;
-				height: 141px;
-				margin-top: -70px;
-				background: url("images/bracket.svg");
-				opacity: 0.15;
-			}
+	#banner .left-intro {
+		width: 50%;
+	}
 
-			#banner > .container:before {
-				left: 0;
-			}
+	#banner .right-intro {
+		margin-left: 10%;
+		width: 50%;
+	}
 
-			#banner > .container:after {
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				right: 0;
-			}
+	#banner img {
+		border-radius: 50%;
+		border: 1px solid black;
+		max-width: 100%;
+		height: auto;
+		width:500px;
+	}
 
 /* Main */
 
@@ -2175,24 +2165,6 @@ input, select, textarea {
 
 		#content > section:first-child,
 		#content > article:first-child {
-			border-top: 0;
-			box-shadow: none;
-			margin: 0;
-			padding: 0;
-		}
-
-/* Sidebar */
-
-	#sidebar > section,
-	#sidebar > article {
-		border-top: solid 2px #e5e5e5;
-		box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
-		margin: 5em 0 0 0;
-		padding: 5em 0 0 0;
-	}
-
-		#sidebar > section:first-child,
-		#sidebar > article:first-child {
 			border-top: 0;
 			box-shadow: none;
 			margin: 0;
@@ -2226,18 +2198,11 @@ input, select, textarea {
 			}
 
 		#footer h2 {
+			font-weight: 500;
 			text-align: center;
+			color: rgb(156, 140, 249);
 		}
-
-/* Copyright */
-
-	#copyright {
-		border-top: solid 2px #e5e5e5;
-		text-align: center;
-		margin-top: 6em;
-		padding-top: 4em;
-	}
-
+		
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
