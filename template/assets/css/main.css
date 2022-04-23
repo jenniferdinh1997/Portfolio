@@ -1,6 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
-@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Poppins:wght@700&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	margin-left: 250px;
 }
 
 ol, ul {
@@ -133,7 +134,6 @@ input, select, textarea {
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		color: black;
 		text-decoration: none;
-		border-bottom: solid 1px #ddd;
 	}
 
 		a strong {
@@ -144,13 +144,12 @@ input, select, textarea {
 		}
 
 		a:hover {
-			color: rgba(174,169,202,1);
-			border-bottom-color: rgba(255, 255, 255, 0);
+			color:rgb(156, 140, 249);
 		}
 
-			a:hover strong {
-				color: rgba(174,169,202,1);
-			}
+		a:hover strong {
+			color: rgb(156, 140, 249);
+		}
 
 	strong, b {
 		font-weight: 600;
@@ -1898,241 +1897,43 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		position: relative;
 		background: #fff;
 		text-align: center;
 	}
 
-		#header > .container {
-			padding: 14em 0 7em 0;
-			border-bottom: solid 2px #e5e5e5;
-			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
-		}
-
-		#header h1 {
-			font-family: 'Arvo';
-			font-weight: 700;
-			color: rgb(156, 140, 249);
-			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
-			letter-spacing: 13px;
-		}
-
-			#header h1 a {
-				border: 0;
-			}
-
-		#header p {
-			text-transform: uppercase;
-			font-weight: 400;
-			color: #888;
-			margin: 2.5em 0 0 0;
-			font-size: 0.85em;
-			letter-spacing: 3px;
-			text-align: center;
-		}
-
-/* Nav */
-
-	#nav {
-		position: absolute;
-		top: 3em;
-		left: 0;
-		width: 100%;
-		cursor: default;
+	#header > .container {
+		padding: 7em 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.animation {
+		margin: 0 auto;
 	}
 
-		#nav > ul > li {
-			display: inline-block;
-			padding-right: 2em;
-		}
-
-			#nav > ul > li:last-child {
-				padding-right: 0;
-			}
-
-			#nav > ul > li > a {
-				border: 0;
-				text-decoration: none;
-				text-transform: uppercase;
-				font-weight: 400;
-				color: #777;
-				outline: 0;
-				display: block;
-			}
-
-				#nav > ul > li > a:before {
-					display: inline-block;
-					background: #878787;
-					color: #e4e4e4;
-					width: 2.25em;
-					font-size: 0.8em;
-					height: 2.25em;
-					border-radius: 2.25em;
-					line-height: 2.1em;
-					text-align: center;
-					box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
-					margin-right: 0.75em;
-					-moz-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
-					-webkit-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
-					-o-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
-					-ms-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
-					transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
-				}
-
-				#nav > ul > li > a > span {
-					-moz-transition: color 0.25s ease-in-out;
-					-webkit-transition: color 0.25s ease-in-out;
-					-o-transition: color 0.25s ease-in-out;
-					-ms-transition: color 0.25s ease-in-out;
-					transition: color 0.25s ease-in-out;
-					font-size: 0.85em;
-					letter-spacing: 3px;
-				}
-
-			#nav > ul > li > ul {
-				display: none;
-			}
-
-			#nav > ul > li.active > a:before,
-			#nav > ul > li:hover > a:before {
-				background: rgb(156, 140, 249);
-				color: #fff;
-			}
-
-	.dropotron {
-		text-align: left;
-		border: solid 1px #e5e5e5;
-		border-radius: 4px;
-		background: #fff;
-		background: rgba(255, 255, 255, 0.965);
-		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-		padding: 0.75em 0 0.5em 0;
-		min-width: 12em;
-		margin-top: calc(-0.5em + 1px);
-		margin-left: -2px;
-		list-style: none;
-	}
-
-		.dropotron.level-0 {
-			margin-top: 1.5em;
-			margin-left: -1em;
-		}
-
-			.dropotron.level-0:after {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 1.25em;
-				top: calc(-0.75em + 1px);
-				border-left: solid 0.75em rgba(255, 255, 255, 0);
-				border-right: solid 0.75em rgba(255, 255, 255, 0);
-				border-bottom: solid 0.75em #fff;
-			}
-
-			.dropotron.level-0:before {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 1.25em;
-				top: -0.75em;
-				border-left: solid 0.75em rgba(255, 255, 255, 0);
-				border-right: solid 0.75em rgba(255, 255, 255, 0);
-				border-bottom: solid 0.75em #ccc;
-			}
-
-		.dropotron span, .dropotron a {
-			display: block;
-			padding: 0.3em 1em 0.3em 1em;
-			border: 0;
-			border-top: solid 1px #f0f0f0;
-			outline: 0;
-		}
-
-		.dropotron li {
-			padding-left: 0;
-			margin: 0;
-		}
-
-			.dropotron li:first-child > span, .dropotron li:first-child > a {
-				border-top: 0;
-				padding-top: 0;
-			}
-
-			.dropotron li:hover > span, .dropotron li:hover > a {
-				-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				color: rgb(156, 140, 249);
-			}
-
-/* Features */
-
-	#features {
-		position: relative;
-		overflow: hidden;
-		background: #fff;
-		text-align: center;
-		padding: 6em 0;
-	}
-
-	#features p {
-		text-align: center;
-	}
-
-	#features ul.actions {
-		margin-top: 1.25em;
-	}
-
-	#features h2 {
+	.animation h1 {
+		font-family: 'Arvo';
+		font-weight: 700;
 		color: rgb(156, 140, 249);
-	}
-
-/* Intro */
-
-	#banner {
-		position: relative;
-		overflow: hidden;
-		background: #fff;
-		color: black;
-		position: relative;
-		padding: 10em 0;
-	}
-
-	#banner h1 {
-		font-weight: 400;
+		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 		font-size: 3em;
-		font-family: 'Akshar', sans-serif;
-		color: rgb(156, 140, 249);
-		line-height: 2em;
-		letter-spacing: 4px;
-		text-align: left;
-		text-transform: none;
-		margin: 0;
+		letter-spacing: 5px;
 	}
 
-	#banner > .container {
-		position: relative;
+	.intro {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		margin-top: 30px;
 	}
 
-	#banner .left-intro {
-		width: 50%;
+	.intro #left-intro {
+		width:fit-content;
+		margin: 10px;
 	}
 
-	#banner .right-intro {
-		margin-left: 10%;
-		width: 50%;
-	}
-
-	#banner img {
-		border-radius: 50%;
-		border: 1px solid black;
-		max-width: 100%;
-		height: auto;
-		width: 500px;
+	.intro #right-intro {
+		width: fit-content;
+		margin: 10px;
 	}
 
 	.aboutme-button {
@@ -2186,6 +1987,60 @@ input, select, textarea {
 	
 	.aboutme-button:active .icon {
 		transform: scale(0.95);
+	}
+
+/* Nav */
+
+	#nav {
+		top: 3em;
+		left: 0;
+		width: 100%;
+		height: 100%; 
+		width: 250px; 
+		position: fixed; 
+		z-index: 1;
+		top: 0; 
+		left: 0;
+		overflow-x: hidden;
+		padding-top: 20px;
+		background-color: rgba(247, 247, 247, 0.762);
+		text-align: center;
+	}
+
+	#nav h2 {
+		font-weight: bold;
+		font-size: 1.75em;
+		line-height: 30px;
+		font-family: 'Source Sans Pro';
+		color: rgb(156, 140, 249);
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+
+	.nav-intro {
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+	}
+
+	#nav a {
+		font-size: 1.75em;
+	}
+
+	.nav-socials {
+		display: inline-block;
+		text-align: center;
+		position: fixed;
+		bottom: 40px;
+		left: 100px;
+	}
+
+	#nav img {
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
 	}
    
 /* About Me */

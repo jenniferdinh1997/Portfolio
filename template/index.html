@@ -12,46 +12,56 @@
 			<!-- Header -->
 				<section id="header">
 					<div class="container">
+						<!-- Intro -->
+						<div class="animation">
+							<h1>
+								<a href="" class="typewrite" data-period="2000" data-type='["Jennifer Dinh", "Web Developer", "Software Engineer", "Lifelong Learner" ]'>
+								  <span class="wrap"></span>
+								</a>
+							  </h1>
+						</div>
 
-						<!-- Title -->
-							<h1 id="logo">Jennifer Dinh</a></h1>
-							<br>
-							<h2>Full Stack Software Engineer</h2>
+						<div class="intro">
+							<div id="left-intro">
+								<a href="#about-me">
+									<button class="aboutme-button"> About Me
+										<div class="icon">
+										<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+										</div>
+									</button>
+								</a>
+							</div>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
-									<li><a href="" class="icon solid fa-code"><span>About Me</span></a></li>
-									<li><a class="icon solid fa-copy"><span>Resume</span></a></li>
-									<li><a href="https://www.linkedin.com/in/dinh-jennifer/" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
-									<li><a href="https://github.com/jenniferdinh1997" class="icon brands fa-github"><span>Github</span></a></li>
-								</ul>
-							</nav>
-
+							<div id="right-intro">
+								<a href="">
+									<button class="aboutme-button"> Resume
+										<div class="icon">
+										<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+										</div>
+									</button>
+								</a>
+							</div>
+						</div>
 					</div>
 				</section>
 
-			<!-- Intro -->
-				<section id="banner">
-					<div class="container">
-						<div class="left-intro">
-							<h1>hi i'm jennifer!</h1>
-
-							<a href="#about-me">
-								<button class="aboutme-button"> About Me
-									<div class="icon">
-									<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-									</div>
-								</button>
-							</a>
-
-						</div>
-						<div class="right-intro">
+			<!-- Sidebar -->
+				<div id="nav">
+					<ul>
+						<div class="nav-intro">
 							<img src="./images/aboutme.jpg">
+							<h2>Jennifer Dinh</h2>
+							<a href="#header"><span>Home</span></a>
+							<a href="#about-me"><span>About Me</span></a>
+							<a><span>Resume</span></a>
 						</div>
-					</div>
-				</section>
+
+						<div class="nav-socials">
+							<a href="https://www.linkedin.com/in/dinh-jennifer/" class="icon brands fa-linkedin"></a>
+							<a href="https://github.com/jenniferdinh1997" class="icon brands fa-github"></a>
+						</div>
+					</ul>
+				</div>
 
 			<!-- About Me -->
 				<section id="about-me">
@@ -180,6 +190,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/animation.js"></script>
 
 	</body>
 </html>
