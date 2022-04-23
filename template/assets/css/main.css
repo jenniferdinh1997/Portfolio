@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	margin-left: 250px;
+	margin-left: 220px;
 }
 
 ol, ul {
@@ -79,7 +79,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f0f0;
+		background: white;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -185,7 +185,6 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin-bottom: 2em;
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -1715,10 +1714,6 @@ input, select, textarea {
 		width: 100%;
 	}
 
-		table tbody tr {
-			border-top: solid 1px #E5E5E5;
-		}
-
 			table tbody tr:first-child {
 				border-top: 0;
 			}
@@ -1897,15 +1892,16 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: #fff;
 		text-align: center;
+		background-image: linear-gradient(to bottom, #c5dce6, #d6e4ee, #e6ecf4, #f4f5fa, #ffffff);
 	}
 
 	#header > .container {
-		padding: 7em 0 0 0;
+		padding: 7em;
 		display: flex;
 		flex-direction: column;
 	}
+
 	.animation {
 		margin: 0 auto;
 	}
@@ -1915,7 +1911,7 @@ input, select, textarea {
 		font-weight: 700;
 		color: rgb(156, 140, 249);
 		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-		font-size: 3em;
+		font-size: 3.5em;
 		letter-spacing: 5px;
 	}
 
@@ -1996,14 +1992,14 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		height: 100%; 
-		width: 250px; 
+		width: 220px; 
 		position: fixed; 
 		z-index: 1;
 		top: 0; 
 		left: 0;
 		overflow-x: hidden;
 		padding-top: 20px;
-		background-color: rgba(247, 247, 247, 0.762);
+		background-color: rgba(197,220,230,1);
 		text-align: center;
 	}
 
@@ -2012,7 +2008,7 @@ input, select, textarea {
 		font-size: 1.75em;
 		line-height: 30px;
 		font-family: 'Source Sans Pro';
-		color: rgb(156, 140, 249);
+		color: white;
 		text-align: center;
 		text-transform: uppercase;
 		margin-top: 20px;
@@ -2026,6 +2022,11 @@ input, select, textarea {
 
 	#nav a {
 		font-size: 1.75em;
+		color: white;
+	}
+
+	#nav a:hover {
+		color:rgb(35,67,99,1);
 	}
 
 	.nav-socials {
@@ -2033,11 +2034,12 @@ input, select, textarea {
 		text-align: center;
 		position: fixed;
 		bottom: 40px;
-		left: 100px;
+		left: 80px;
 	}
 
 	#nav img {
 		border-radius: 50%;
+		border: solid white 1px;
 		margin-left: auto;
 		margin-right: auto;
 		width: 80%;
@@ -2047,22 +2049,18 @@ input, select, textarea {
 #about-me {
 	position: relative;
 	overflow: hidden;
-	background: #fff;
+	background: white;
 	color: black;
-	position: relative;
-	padding: 10em 0;
+	margin-left: 10px;
 }
 
 #about-me h1 {
-	font-weight: 400;
-	font-size: 3em;
-	font-family: 'Akshar', sans-serif;
+	font-weight: 500;
+	font-size: 2.5em;
+	font-family: 'Source Sans Pro';
 	color: rgb(156, 140, 249);
 	line-height: 2em;
-	letter-spacing: 4px;
-	text-align: left;
-	text-transform: none;
-	margin: 0;
+	text-align: center;
 }
 
 #about-me > .container {
@@ -2079,13 +2077,27 @@ input, select, textarea {
 	width: 50%
 }
 
-#about-me p {
+#about-me > p {
 	font-weight: 300;
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	text-align: left;
 	text-transform: none;
 	margin: 0;
+}
+
+.checked {
+	color: rgb(156, 140, 249);
+}
+
+#skills {
+	text-align: center;
+}
+
+#skill {
+	color: rgb(156, 140, 249);
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 /* Main */
@@ -2095,6 +2107,68 @@ input, select, textarea {
 		overflow: hidden;
 		background: #fff;
 		padding: 6em 0;
+	}
+/* Education */
+	#education {
+		color: white;
+		background-color: rgb(156, 140, 249);
+	}
+
+	#education > .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 20px;
+		color: white;
+	}
+
+	#education > h1 {
+		font-weight: 500;
+		font-size: 2.5em;
+		font-family: 'Source Sans Pro';
+		color: white;
+		line-height: 2em;
+		text-align: center;
+	}
+
+	.college {
+		width: 50%;
+		text-align: center;
+	}
+
+	.college > h2 {
+		font-size: 1em;
+		color: white;
+		margin-bottom: 0;
+	}
+
+	.college > p {
+		text-align: center;
+	}
+
+	.bootcamp {
+		width: 50%;
+		text-align: center;
+	}
+
+	.bootcamp > h2 {
+		font-size: 1em;
+		color: white;
+		margin-bottom: 0;
+	}
+
+	.bootcamp > p {
+		text-align: center;
+	}
+
+/* Portfolio */
+	h2 {
+		font-weight: 500;
+		font-size: 2.5em;
+		font-family: 'Source Sans Pro';
+		color: rgb(156, 140, 249);
+		line-height: 2em;
+		text-align: center;
 	}
 
 /* Content */
