@@ -774,7 +774,7 @@ input, select, textarea {
 
 	#nav h2 {
 		font-weight: bold;
-		font-size: 1.75em;
+		font-size: 1.6em;
 		line-height: 30px;
 		font-family: 'Source Sans Pro';
 		color: white;
@@ -794,7 +794,7 @@ input, select, textarea {
 	}
 
 	#nav a {
-		font-size: 1.75em;
+		font-size: 1.5em;
 		color: white;
 		padding: 15px;
 	}
@@ -844,7 +844,8 @@ input, select, textarea {
 }
 
 #about-me .left-about {
-	width: 50%
+	width: 50%;
+	margin-left: 20px;
 }
 
 #about-me .right-about {
@@ -857,7 +858,6 @@ input, select, textarea {
 	font-size: 1em;
 	text-align: left;
 	text-transform: none;
-	margin: 0;
 }
 
 .checked {
@@ -948,6 +948,7 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 70px;
+		margin-left: 20px;
 	}
 
 	.card img {
@@ -980,7 +981,8 @@ input, select, textarea {
 
 	.description {
 		margin-left: 30px;
-		width: 70%;
+		margin-right: 30px;
+		width: 50%;
 	}
 
 	.description > h3 {
