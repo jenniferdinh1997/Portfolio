@@ -834,7 +834,7 @@ input, select, textarea {
 	font-family: 'Source Sans Pro';
 	color: rgb(156, 140, 249);
 	line-height: 2em;
-	text-align: center;
+	text-align: left;
 }
 
 #about-me > .container {
@@ -845,34 +845,56 @@ input, select, textarea {
 
 #about-me .left-about {
 	width: 50%;
-	margin-left: 20px;
 }
 
 #about-me .right-about {
-	width: 50%
+	width: 50%;
+	margin-right: 10%;
 }
 
-#about-me > p {
+#about-me p {
 	font-weight: 300;
 	font-family: 'Source Sans Pro';
-	font-size: 1em;
+	font-size: 0.9em;
 	text-align: left;
 	text-transform: none;
 }
 
-.checked {
-	color: rgb(156, 140, 249);
-}
-
+/* Skills */
 #skills {
-	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background: white;
+	color: black;
+	margin-top: 5%;
 }
 
-#skill {
+.left-skills h1 {
+	font-weight: 500;
+	font-size: 2.5em;
+	font-family: 'Source Sans Pro';
 	color: rgb(156, 140, 249);
-	font-weight: bold;
-	font-size: 1.5em;
+	line-height: 2em;
+	text-align: left;
 }
+
+#skills > .container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+#skills .left-skills {
+	width: 50%;
+	margin-left: 10%;
+}
+
+#skills .right-skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 
 /* Education */
 	#education {
