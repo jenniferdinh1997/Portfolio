@@ -202,7 +202,6 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
 		max-width: 100%;
 		width: 70em;
 	}
@@ -414,69 +413,6 @@ input, select, textarea {
 					top: 0;
 				}
 
-/* Form */
-
-	form label {
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #888;
-		display: block;
-		margin: 0 0 1em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-moz-transition: background-color 0.25s ease-in-out;
-		-webkit-transition: background-color 0.25s ease-in-out;
-		-ms-transition: background-color 0.25s ease-in-out;
-		transition: background-color 0.25s ease-in-out;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #e8e8e8;
-		width: 100%;
-		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
-		border-radius: 4px;
-		line-height: 1.25em;
-		padding: 0.75em 1em 0.75em 1em;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #f0f0f0;
-		}
-
-	form textarea {
-		min-height: 11em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #555 !important;
-		line-height: 1.35em;
-	}
-
-	form :-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
-
 /* Table */
 
 	table {
@@ -658,38 +594,31 @@ input, select, textarea {
 	}
 
 /* Header */
-
-	#header {
-		position: relative;
-		text-align: center;
-		background-image: linear-gradient(to bottom, #c5dce6, #d6e4ee, #e6ecf4, #f4f5fa, #ffffff);
-	}
-
 	#header > .container {
-		padding-top: 6em;
-		padding-bottom: 2em;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.animation {
-		margin: 0 auto;
+		background-image: url('../../images/cover.jpg');
+		background-size: cover;
+		height: 35em;
 	}
 
 	.animation h1 {
-		font-family: 'Arvo';
-		font-weight: 700;
-		color: rgb(156, 140, 249);
-		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-		font-size: 3.5em;
-		letter-spacing: 5px;
+		margin-top: 20%;
+		margin-left: 100px;
+		font-family: 'Source Sans Pro';
+		font-weight: 370;
+		color: white;
+		font-size: 2.75em;
+		letter-spacing: 4px;
 	}
 
 	.intro {
+		position: absolute;
+		top: 45%;
+		margin-left: 100px;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		margin-top: 50px;
+		justify-content: flex-start;
 	}
 
 	.intro #left-intro {
@@ -761,7 +690,7 @@ input, select, textarea {
 		top: 3em;
 		width: 100%;
 		height: 100%; 
-		width: 220px; 
+		width: 270px; 
 		position: fixed; 
 		z-index: 1;
 		top: 0; 
