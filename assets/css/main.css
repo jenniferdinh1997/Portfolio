@@ -808,15 +808,11 @@ input, select, textarea {
 #skills .left-skills {
 	margin-left: 40px;
 	width: 70%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 #skills .right-skills {
 	width: 30%;
 }
-
 
 /* Education */
 #education {
