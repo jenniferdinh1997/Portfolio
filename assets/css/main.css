@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	margin-left: 220px;
+	margin-left: 270px;
 }
 
 ol, ul {
@@ -147,14 +147,6 @@ input, select, textarea {
 			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		}
 
-		a:hover {
-			color:rgb(156, 140, 249);
-		}
-
-		a:hover strong {
-			color: rgb(156, 140, 249);
-		}
-
 	strong, b {
 		font-weight: 600;
 		color: #666;
@@ -202,9 +194,8 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
 		max-width: 100%;
-		width: 70em;
+		width: 80em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -414,78 +405,11 @@ input, select, textarea {
 					top: 0;
 				}
 
-/* Form */
-
-	form label {
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #888;
-		display: block;
-		margin: 0 0 1em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-moz-transition: background-color 0.25s ease-in-out;
-		-webkit-transition: background-color 0.25s ease-in-out;
-		-ms-transition: background-color 0.25s ease-in-out;
-		transition: background-color 0.25s ease-in-out;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #e8e8e8;
-		width: 100%;
-		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
-		border-radius: 4px;
-		line-height: 1.25em;
-		padding: 0.75em 1em 0.75em 1em;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #f0f0f0;
-		}
-
-	form textarea {
-		min-height: 11em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #555 !important;
-		line-height: 1.35em;
-	}
-
-	form :-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
-
 /* Table */
 
 	table {
 		width: 100%;
 	}
-
-			table tbody tr:first-child {
-				border-top: 0;
-			}
 
 		table td {
 			padding: 0.75em 1em 0.75em 1em;
@@ -495,22 +419,6 @@ input, select, textarea {
 			text-align: left;
 			font-weight: bold;
 			padding: 0.75em 1em 0.75em 1em;
-		}
-
-		table thead {
-			background: #878787;
-			color: #fff;
-			font-weight: 400;
-			text-transform: uppercase;
-			border: 0;
-			box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
-			font-size: 0.85em;
-			letter-spacing: 2px;
-		}
-
-		table tfoot {
-			background: #F0F0F0;
-			border-top: solid 2px #E5E5E5;
 		}
 
 /* Button */
@@ -593,27 +501,6 @@ input, select, textarea {
 				background: #878787;
 			}
 
-/* Box */
-
-	.no-sidebar .box.post > header {
-		text-align: center;
-	}
-
-	.box.excerpt .date {
-		background: #878787;
-		color: #fff;
-		font-weight: 400;
-		text-transform: uppercase;
-		border-radius: 4px;
-		border: 0;
-		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
-		display: inline-block;
-		font-size: 0.85em;
-		letter-spacing: 2px;
-		padding: 0.25em 1em 0.25em 1em;
-		margin: 0 0 2.5em 0;
-	}
-
 /* Icons */
 
 	.icon {
@@ -658,38 +545,34 @@ input, select, textarea {
 	}
 
 /* Header */
-
 	#header {
-		position: relative;
-		text-align: center;
-		background-image: linear-gradient(to bottom, #c5dce6, #d6e4ee, #e6ecf4, #f4f5fa, #ffffff);
+		background-image: url('../../images/cover.jpg');
+		background-size: cover;
 	}
 
 	#header > .container {
-		padding-top: 6em;
-		padding-bottom: 2em;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.animation {
-		margin: 0 auto;
+		height: 35em;
 	}
 
 	.animation h1 {
-		font-family: 'Arvo';
-		font-weight: 700;
-		color: rgb(156, 140, 249);
-		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-		font-size: 3.5em;
-		letter-spacing: 5px;
+		margin-top: 20%;
+		margin-left: 80px;
+		font-family: 'Source Sans Pro';
+		font-weight: 370;
+		color: white;
+		font-size: 2.75em;
+		letter-spacing: 4px;
 	}
 
 	.intro {
+		position: absolute;
+		top: 45%;
+		margin-left: 80px;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		margin-top: 50px;
+		justify-content: flex-start;
 	}
 
 	.intro #left-intro {
@@ -761,7 +644,7 @@ input, select, textarea {
 		top: 3em;
 		width: 100%;
 		height: 100%; 
-		width: 220px; 
+		width: 270px; 
 		position: fixed; 
 		z-index: 1;
 		top: 0; 
@@ -808,7 +691,7 @@ input, select, textarea {
 		text-align: center;
 		position: fixed;
 		bottom: 40px;
-		left: 55px;
+		left: 75px;
 	}
 
 	#nav img {
@@ -825,7 +708,7 @@ input, select, textarea {
 	overflow: hidden;
 	background: white;
 	color: black;
-	margin-left: 10px;
+	margin-top: 40px;
 }
 
 #about-me h1 {
@@ -834,7 +717,7 @@ input, select, textarea {
 	font-family: 'Source Sans Pro';
 	color: rgb(156, 140, 249);
 	line-height: 2em;
-	text-align: center;
+	text-align: left;
 }
 
 #about-me > .container {
@@ -844,92 +727,112 @@ input, select, textarea {
 }
 
 #about-me .left-about {
-	width: 50%;
-	margin-left: 20px;
+	width: 30%;
 }
 
 #about-me .right-about {
-	width: 50%
+	width: 70%;
+	margin-right: 5%;
 }
 
-#about-me > p {
+#about-me p {
 	font-weight: 300;
 	font-family: 'Source Sans Pro';
-	font-size: 1em;
+	font-size: 0.85em;
 	text-align: left;
 	text-transform: none;
 }
 
-.checked {
-	color: rgb(156, 140, 249);
-}
-
+/* Skills */
 #skills {
-	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background: white;
+	color: black;
+	margin-top: 40px;
 }
 
-#skill {
+.skills h1 {
+	font-weight: 500;
+	font-size: 2.5em;
+	font-family: 'Source Sans Pro';
 	color: rgb(156, 140, 249);
-	font-weight: bold;
-	font-size: 1.5em;
+	line-height: 2em;
+	text-align: left;
+}
+
+#skills .skills {
+	margin-left: 40px;
+	width: 100%;
+}
+
+#bar {
+	background: rgb(156, 140, 249);
+	border-radius: 25px;
+	padding: 5px;
+}
+
+#skills-table td {
+	font-weight: 600;
 }
 
 /* Education */
-	#education {
-		color: white;
-		background-color: rgb(156, 140, 249);
-		margin-top: 50px;
-	}
+#education {
+	color: white;
+	background-color: rgb(156, 140, 249);
+	margin-top: 50px;
+}
 
-	#education > .container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		color: white;
-	}
+#education > .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: white;
+	margin-left: 80px;
+}
 
-	#education > h1 {
-		font-weight: 500;
-		font-size: 2.5em;
-		font-family: 'Source Sans Pro';
-		color: white;
-		line-height: 2em;
-		text-align: center;
-		padding: 0.75em;
-	}
+#education > h1 {
+	font-weight: 500;
+	font-size: 2.5em;
+	font-family: 'Source Sans Pro';
+	color: white;
+	line-height: 2em;
+	text-align: center;
+	padding: 0.75em;
+}
 	
-	.cap, .code {
-		font-size: 3em;
-		opacity: 0.5;
-	}
+.cap, .code {
+	font-size: 3em;
+	opacity: 0.5;
+}
 
-	.college, .bootcamp {
-		width: 50%;
-		text-align: center;
-		margin-bottom: 50px;
-	}
+.college, .bootcamp {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 50px;
+}
 
-	.college > h2 {
-		font-size: 1em;
-		font-weight: bold;
-		color: white;
-		margin-bottom: 0;
-	}
+.college > h2 {
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 0;
+}
 
-	.college > p {
-		text-align: center;
-	}
+.college > p {
+	text-align: center;
+}
 
-	.bootcamp > h2 {
-		font-size: 1em;
-		font-weight: bold;
-		color: white;
-		margin-bottom: 0;
-	}
+.bootcamp > h2 {
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 0;
+}
 
-	.bootcamp > p {
-		text-align: center;
-	}
+.bootcamp > p {
+	text-align: center;
+}
 
 /* Portfolio */
 	h2 {
@@ -940,15 +843,15 @@ input, select, textarea {
 		line-height: 2em;
 		text-align: center;
 		margin-top: 20px;
-		margin-bottom: 5px;
+		margin-bottom: 0px;
 	}
 
 	#portfolio > .container {
-		margin-top: 20px;
+		margin-top: 40px;
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 70px;
-		margin-left: 20px;
+		margin-bottom: 40px;
+		margin-left: 40px;
 	}
 
 	.card img {
