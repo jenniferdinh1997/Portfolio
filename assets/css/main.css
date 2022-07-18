@@ -545,11 +545,14 @@ input, select, textarea {
 	}
 
 /* Header */
+	#header {
+		background-image: url('../../images/cover.jpg');
+		background-size: cover;
+	}
+
 	#header > .container {
 		display: flex;
 		flex-direction: column;
-		background-image: url('../../images/cover.jpg');
-		background-size: cover;
 		height: 35em;
 	}
 
