@@ -568,7 +568,7 @@ input, select, textarea {
 
 	.intro {
 		position: absolute;
-		top: 45%;
+		top: 40%;
 		margin-left: 80px;
 		display: flex;
 		flex-direction: row;
