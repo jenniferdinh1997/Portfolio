@@ -721,18 +721,7 @@ input, select, textarea {
 }
 
 #about-me > .container {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-}
-
-#about-me .left-about {
-	width: 30%;
-}
-
-#about-me .right-about {
-	width: 70%;
-	margin-right: 5%;
+	padding: 32px;
 }
 
 #about-me p {
@@ -781,14 +770,28 @@ input, select, textarea {
 	color: white;
 	background-color: rgb(156, 140, 249);
 	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
 }
 
-#education > .container {
+.education-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	color: white;
-	margin-left: 80px;
+}
+
+.education {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.education h2 {
+	color: white;
+	font-size: 1.5rem;
+	margin: 0;
 }
 
 #education > h1 {
