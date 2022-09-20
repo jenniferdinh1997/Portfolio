@@ -652,35 +652,87 @@ input, select, textarea {
 
 /* Skills */
 #skills {
-	position: relative;
-	overflow: hidden;
 	background: white;
 	color: black;
 	margin-top: 40px;
+	padding: 32px;
 }
 
-.skills h1 {
+#skills > h1 {
+	color: rgb(156, 140, 249);
 	font-weight: 500;
 	font-size: 2.5em;
 	font-family: 'Source Sans Pro';
+}
+
+.skills-container {
+	padding: 20px 40px;
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	text-align: center;
+}
+
+#skills h3:hover {
 	color: rgb(156, 140, 249);
-	line-height: 2em;
-	text-align: left;
 }
 
-#skills .skills {
-	margin-left: 40px;
-	width: 100%;
+#js {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
 }
 
-#bar {
-	background: rgb(156, 140, 249);
-	border-radius: 25px;
-	padding: 5px;
+#py {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
-#skills-table td {
-	font-weight: 600;
+#django {
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+#node {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#express {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#react {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#spring {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+#java {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
 /* Education */
