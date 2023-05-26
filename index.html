@@ -68,64 +68,43 @@
 				<section id="about-me">
 					<div class="container">
 						<div class="about-me">
-							<h1><span style="color:black">About</span> Me</h1>
-							<p>A year ago I was knee-deep in graduate school applications when I had to ask myself: will this path bring me the lifelong career fulfillment that I desire?
-							Although it was rewarding to bring an impact into patients' lives, there is typically one best way to treat a condition and deviating from the textbook
-							could be dangerous.</p>
-							<br />
-							<p>I found myself yearning for an environment powered by critical thinking and creativity and thought about how one of my favorite
-							parts of being a medical assistant was using the Electronic Medical Records. The software we used was wildly outdated and encountered frequent glitches and I 
-							wanted to determine the causes behind those bugs and remodel the system to improve its usability. One bootcamp and countless hours of coding later, I
-							now wake up with the same feeling of excitement and fulfillment that I had been looking for a year ago and hope to still bring an impact into people's lives, 
-							just in a slightly different way.
-							</p>
+							<p>Back in 2020 I graduated college and had to ask myself what I wanted to do
+								with the rest of my life that would bring me both joy and satisfaction.
+								Fast forward to today and I've had the privilege of building software for
+								a start-up and many side projects of my own.</p>
+							<p>The majority of my days are spent building and perfecting products, but
+								when I'm not at the computer you can find me on a run or reading the
+								latest thriller.</p>
 						</div>
-					</div>
-				</section>
-
-			<!-- Skills -->
-				<section id="skills">
-					<h1>Skills</h1>
-					<div class="skills-container">
-						<h3 id="js">Javascript</h3>
-						<h3 id="py">Python</h3>
-						<h3 id="django">Django</h3>
-						<h3 id="node">Node</h3>
-						<h3 id="express">Express</h3>
-						<h3 id="react">React</h3>
-						<h3 id="spring">Spring</h3>
-						<h3 id="java">Java</h3>
 					</div>
 				</section>
 
 			<!-- Education and Experience -->
-				<section id="education">
-					<h1>Education & Experience</h1>
-					<div class="education-container">
-						<div class="education">
-							<i class="fa fa-graduation-cap cap"></i>
-							<h2>UC San Diego</h2>
-							<p>2016-2020</p>
-							<p>Bachelor of Science in Human Biology</p>
-						</div>
-						<div class="education">
-							<i class="fa fa-code code"></i>
-							<h2>General Assembly</h2>
-							<p>2022</p>
-							<p>Full Stack Web Development Cert.</p>
-						</div>
-						<div class="education">
-							<i class="fa fa-car car"></i>
-							<h2>TomorrowDragon</h2>
-							<p>2022</p>
-							<p>Full Stack Engineer</p>
-						</div>
-					</div>
+				<section id="experience">
+					<table class="experience">
+						<tr>
+							<td id="year">Aug 2022 - Present</td>
+							<td id="description">
+								<h3>Fullstack Engineer • TomorrowDragon</h3>
+								<p>Delivered high-quality production code and spearheaded end-to-end
+									software development life cycle with a strong focus on quality and 
+									efficiency. Ensured the successful implementation of all main 
+									functionalities and orchestrated the seamless integration of 
+									individual components.</p>
+								<div class="skills">
+									<span>React</span>
+									<span>Spring Boot</span>
+									<span>PostgreSQL</span>
+									<span>Jooq</span>
+									<span>Typescript</span>
+								</div>
+							</td>
+						</tr>
+					</table>
 				</section>
 
 			<!-- Recent Projects --> 
 				<section id="portfolio">
-					<h2>Projects</h2>
 					<div class="container">
 								<!-- Project 1 -->
 								<section id="project">
@@ -134,11 +113,15 @@
 									</div>
 									<div class="description">
 										<h3>onTime</h3>
-										<h4>Summary</h4>
 										<p>Inspired by Uber Health, onTime is a full-stack patient centered rideshare application that aims to match patients and drivers based on language preferences and accessibility 
 										to prevent communication barriers and ease transportation obstacles.</p> <br />
-										<h4>Technology</h4>
-										<p>HTML, CSS, Javascript, Express, React, Node, MongoDB, AWS</p> <br />
+										<div class="skills">
+											<span>MongoDB</span>
+											<span>Express.js</span>
+											<span>React</span>
+											<span>Node.js</span>
+											<span>AWS</span>
+										</div>
 										<p style="font-weight:600">Github</p><a href="https://github.com/jenniferdinh1997/onTime">github.com/jenniferdinh1997/onTime</a> <br />
 										<p style="font-weight:600">Live</p><a href="https://ontime-1.herokuapp.com">ontime-1.herokuapp.com</a>
 									</div>
@@ -151,12 +134,14 @@
 									</div>
 									<div class="description">
 										<h3>fullTank</h3>
-										<h4>Summary</h4>
 										<p>A gas price tracking application that aims to give users up-to-date pricing information across a network
-										of user-added gas stations across the United States. Users can add and update gas stations and upload photos of their gas stations.</p> <br />
-										<p>Features Google Maps API integration, allowing users to view and route to the gas station.</p> <br />
-										<h4>Technology</h4>
-										<p>HTML, CSS, Python, Django, PostgreSQL, AWS, Google Maps API</p> <br />
+										of user-added gas stations across the United States. Users can add and update gas stations and upload photos of their gas stations.</p>
+										<div class="skills">
+											<span>Django</span>
+											<span>PostgreSQL</span>
+											<span>AWS</span>
+											<span>Google Maps API</span>
+										</div>
 										<p style="font-weight:600">Github</p><a href="https://github.com/jenniferdinh1997/fullTank">github.com/jenniferdinh1997/fullTank</a> <br />
 										<p style="font-weight:600">Live</p><a href="https://fulltank.herokuapp.com/">fulltank.herokuapp.com</a>
 									</div>
@@ -169,11 +154,13 @@
 									</div>
 									<div class="description">
 										<h3>Worth the Weight</h3>
-										<h4>Summary</h4>
 										<p>Inspired by Strong, Worth the Weight is an exercise tracking application that allows any gym-goer to record their workouts and optimize results.
 										Features full CRUD functionality where users can add, update, and delete exercises.</p> <br />
-										<h4>Technology</h4>
-										<p>HTML, CSS, Javascript, Express, MongoDB</p> <br />
+										<div class="skills">
+											<span>Javascript</span>
+											<span>Express.js</span>
+											<span>MongoDB</span>
+										</div>
 										<p style="font-weight:600">Github</p><a href="https://github.com/jenniferdinh1997/Gym-Tracker">github.com/jenniferdinh1997/Gym-Tracker</a>
 										<p style="font-weight:600">Live</p><a href="https://worth-the-weight.herokuapp.com/">worth-the-weight.herokuapp.com</a>
 									</div>
@@ -183,37 +170,9 @@
 			</div>
 		</section>
 
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<h4>Looking for a web developer?</h4>
-						<h2>Contact Me!</h2>
-						<div class="contact">
-							<div class="phone">
-								<i class="fa fa-light fa-phone"></i>
-								<p>(714) 360-7793</p>
-							</div>
-
-							<div class="email">
-								<i class="fa fa-light fa-envelope"></i>
-								<p>jenniferdinh1997@gmail.com</p>
-							</div>
-
-							<div class="location">
-								<i class="fa fa-light fa-map-pin"></i>
-								<p>Orange County, CA</p>
-							</div>
-						</div>
-
-						<button onclick="topFunction()" id="myBtn" title="Go to top">
-							<i class="fa fa-arrow-up"></i>
-						</button>
-
-						<div class="copyright">
-							<p>© Copyright 2022 - All Rights Reserved</p>
-						</div>
-					</div>
-				</section>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fa fa-arrow-up"></i>
+		</button>
 		</div>
 
 		<!-- Scripts -->
