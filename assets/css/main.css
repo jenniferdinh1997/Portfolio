@@ -678,7 +678,7 @@ input, select, textarea {
 	.description {
 		margin-left: 30px;
 		margin-right: 30px;
-		width: 60%;
+		width: 50%;
 	}
 
 	.description > h3 {
